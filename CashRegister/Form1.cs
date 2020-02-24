@@ -117,7 +117,7 @@ namespace CashRegister
 
         private void TenderedInput_TextChanged(object sender, EventArgs e)
         { //takes the amount of money payed and calculates the change
-          //prints the change to the screen 
+          
             try
             {
                 tenderedAmount = Convert.ToInt16(tenderedInput.Text);
@@ -135,12 +135,12 @@ namespace CashRegister
         }
 
         private void ChangeButton_Click(object sender, EventArgs e)
-        {
+        { //prints the change to the screen 
             changeLabel.Text = "Change: " + change.ToString("C");
         }
 
         private void ReceiptButton_Click(object sender, EventArgs e)
-        {
+        { //prints out the receipt and plays a sound as it prints line by line
             SoundPlayer receiptPrint = new SoundPlayer(Properties.Resources.Printer);
             receiptPrint.Play();
 
@@ -218,7 +218,7 @@ namespace CashRegister
         }
 
         private void NewOrder_Click(object sender, EventArgs e)
-        {
+        { //resets the program 
             receiptLabel.Text = String.Empty;
             changeLabel.Text = String.Empty;
             costOutputLabel.Text = String.Empty;
