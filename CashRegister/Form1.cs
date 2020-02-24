@@ -38,7 +38,7 @@ namespace CashRegister
         int tempura;
 
         private void SushiText_TextChanged(object sender, EventArgs e)
-        {
+        { //finds the sushi cost
             try
             {
                
@@ -54,7 +54,7 @@ namespace CashRegister
         }
 
         private void UdonText_TextChanged(object sender, EventArgs e)
-        { 
+        { // finds the udon cost 
             try
             {
                 
@@ -70,7 +70,7 @@ namespace CashRegister
         }
 
         private void BubbleTeaText_TextChanged(object sender, EventArgs e)
-        {
+        { //finds the bubble tea cost 
             try
             {
               
@@ -86,7 +86,7 @@ namespace CashRegister
         }
 
         private void TempuraText_TextChanged(object sender, EventArgs e)
-        {
+        { // finds the tempura cost 
             try
             {
                
@@ -102,7 +102,8 @@ namespace CashRegister
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)
-        {
+        { // calculates the cost of your order, the tax, and the total cost 
+          // prints it to the screen 
             subTotal = totalTempura + totalBT + totalUdon + totalSushi;
             tax = subTotal * hst;
             totalCost = tax + subTotal;
@@ -115,7 +116,8 @@ namespace CashRegister
         }
 
         private void TenderedInput_TextChanged(object sender, EventArgs e)
-        {
+        { //takes the amount of money payed and calculates the change
+          //prints the change to the screen 
             try
             {
                 tenderedAmount = Convert.ToInt16(tenderedInput.Text);
