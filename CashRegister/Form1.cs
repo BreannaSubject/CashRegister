@@ -12,6 +12,10 @@ using System.Media;
 
 namespace CashRegister
 {
+
+    /* Breanna Subject
+     * Cash Register
+     */
     public partial class Form1 : Form
     {
         public Form1()
