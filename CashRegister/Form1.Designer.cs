@@ -78,7 +78,7 @@
             this.sushiLabel.Name = "sushiLabel";
             this.sushiLabel.Size = new System.Drawing.Size(100, 23);
             this.sushiLabel.TabIndex = 2;
-            this.sushiLabel.Text = "Sushi (6pts)";
+            this.sushiLabel.Text = "Sushi (6pcs)";
             // 
             // udonText
             // 
@@ -270,7 +270,7 @@
             this.Controls.Add(this.titleLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hao\'s Sushi";
             this.ResumeLayout(false);
             this.PerformLayout();
 

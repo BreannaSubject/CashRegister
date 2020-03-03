@@ -145,6 +145,7 @@ namespace CashRegister
 
         private void ReceiptButton_Click(object sender, EventArgs e)
         { //prints out the receipt and plays a sound as it prints line by line
+            receiptLabel.BackColor = Color.White;
             SoundPlayer receiptPrint = new SoundPlayer(Properties.Resources.Printer);
             receiptPrint.Play();
 
@@ -155,7 +156,7 @@ namespace CashRegister
 
             receiptPrint.Play();
 
-            receiptLabel.Text += "\nSushi x" + sushi + " @ " + sushiCost.ToString("C");
+            receiptLabel.Text += "\n" + "\nSushi x" + sushi + " @ " + sushiCost.ToString("C");
 
             Refresh();
             Thread.Sleep(200);
@@ -231,6 +232,20 @@ namespace CashRegister
             udonText.Text = String.Empty;
             bubbleTeaText.Text = String.Empty;
             tempuraText.Text = String.Empty;
+
+            sushi = 0;
+            udon = 0;
+            bubbleTea = 0;
+            tempura = 0;
+            totalSushi = 0;
+            totalUdon = 0;
+            totalBT = 0;
+            totalTempura = 0;
+            subTotal = 0;
+            totalCost = 0;
+            tax = 0;
+            tenderedAmount = 0;
+            change = 0;
 
 
 
