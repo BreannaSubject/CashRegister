@@ -237,11 +237,11 @@
             this.receiptLabel.BackColor = System.Drawing.Color.Transparent;
             this.receiptLabel.Font = new System.Drawing.Font("Gentium Book Basic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptLabel.ForeColor = System.Drawing.Color.Black;
-            this.receiptLabel.Location = new System.Drawing.Point(377, 88);
+            this.receiptLabel.Location = new System.Drawing.Point(418, 88);
             this.receiptLabel.Name = "receiptLabel";
-            this.receiptLabel.Size = new System.Drawing.Size(330, 337);
+            this.receiptLabel.Size = new System.Drawing.Size(214, 337);
             this.receiptLabel.TabIndex = 15;
-            this.receiptLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.receiptLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 

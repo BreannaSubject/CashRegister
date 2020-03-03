@@ -247,6 +247,7 @@ namespace CashRegister
             tenderedAmount = 0;
             change = 0;
 
+            receiptLabel.BackColor = Color.Transparent;
 
 
         }
