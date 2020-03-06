@@ -22,11 +22,11 @@ namespace CashRegister
         {
             InitializeComponent();
         }
-        const double sushiCost = 6.50;
-        const double udonCost = 4.00;
-        const double bubbleTeaCost = 2.50;
-        const double tempuraCost = 4.00;
-        const double hst = 0.13;
+        const double SUSHI_COST = 6.50;
+        const double UDON_COST = 4.00;
+        const double BT_COST = 2.50;
+        const double TEMPURA_COST = 4.00;
+        const double HST = 0.13;
         double totalSushi;
         double totalUdon;
         double totalBT;
@@ -47,7 +47,7 @@ namespace CashRegister
             {
                
                 sushi = Convert.ToInt16(sushiText.Text);
-                totalSushi = sushi * sushiCost;
+                totalSushi = sushi * SUSHI_COST;
             }
             catch
             {
@@ -63,7 +63,7 @@ namespace CashRegister
             {
                 
                 udon = Convert.ToInt16(udonText.Text);
-                totalUdon = udon * udonCost;
+                totalUdon = udon * UDON_COST;
             }
             catch
             {
@@ -79,7 +79,7 @@ namespace CashRegister
             {
               
                 bubbleTea = Convert.ToInt16(bubbleTeaText.Text);
-                totalBT = bubbleTea * bubbleTeaCost; 
+                totalBT = bubbleTea * BT_COST; 
             }
             catch
             {
@@ -95,7 +95,7 @@ namespace CashRegister
             {
                
                 tempura = Convert.ToInt16(tempuraText.Text);
-                totalTempura = tempura * tempuraCost; 
+                totalTempura = tempura * TEMPURA_COST; 
             }
             catch
             {
@@ -109,7 +109,7 @@ namespace CashRegister
         { // calculates the cost of your order, the tax, and the total cost 
           // prints it to the screen 
             subTotal = totalTempura + totalBT + totalUdon + totalSushi;
-            tax = subTotal * hst;
+            tax = subTotal * HST;
             totalCost = tax + subTotal;
            
 
@@ -156,28 +156,28 @@ namespace CashRegister
 
             receiptPrint.Play();
 
-            receiptLabel.Text += "\n" + "\nSushi x" + sushi + " @ " + sushiCost.ToString("C");
+            receiptLabel.Text += "\n" + "\nSushi x" + sushi + " @ " + SUSHI_COST.ToString("C");
 
             Refresh();
             Thread.Sleep(200);
 
             receiptPrint.Play();
 
-            receiptLabel.Text += "\nUdon Bowl(s) x" + udon + " @ " + udonCost.ToString("C");
+            receiptLabel.Text += "\nUdon Bowl(s) x" + udon + " @ " + UDON_COST.ToString("C");
 
             Refresh();
             Thread.Sleep(200);
 
             receiptPrint.Play();
 
-            receiptLabel.Text += "\nBubble Tea x" + bubbleTea + " @ " + bubbleTeaCost.ToString("C");
+            receiptLabel.Text += "\nBubble Tea x" + bubbleTea + " @ " + BT_COST.ToString("C");
 
             Refresh();
             Thread.Sleep(200);
 
             receiptPrint.Play();
 
-            receiptLabel.Text += "\nMixed Tempura x" + tempura + " @ " + tempuraCost.ToString("C");
+            receiptLabel.Text += "\nMixed Tempura x" + tempura + " @ " + TEMPURA_COST.ToString("C");
 
             Refresh();
             Thread.Sleep(200);
